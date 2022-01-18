@@ -1,0 +1,173 @@
+.container {
+	max-width: 900px;
+}
+
+.contact-header {
+	background: var(--gold-gradient);
+	color: var(--white);
+	text-align: center;
+	padding: 0.7em;
+	font-size: 2.5rem;
+}
+
+.contact-thumbnail {
+	background-image: url('../Screenshot\ 2022-01-16\ at\ 15.56.01.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 94vh;
+	margin-bottom: 3em;
+}
+
+.contact-section {
+	margin-bottom: 6em;
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-info {
+	display: flex;
+	flex-direction: column;
+}
+
+.comment-title,
+.contact-title {
+	color: var(--font-gray);
+	font-size: 2rem;
+	margin-bottom: 1em;
+}
+
+.contact-title {
+	text-align: center;
+}
+
+label {
+	color: var(--font-gray-light);
+}
+
+form input,
+form textarea {
+	display: block;
+	border: 0;
+	color: var(--font-gray);
+	border-bottom: 1px solid var(--font-gray-light);
+	width: 100%;
+	font-size: 1rem;
+	padding: 0.5em 0;
+	margin-bottom: 2em;
+	outline: none;
+}
+
+.txt-area {
+	resize: vertical;
+}
+
+.two-fields-holder {
+	display: flex;
+	flex-direction: column;
+}
+
+.field-holder {
+	width: 100%;
+}
+
+.send-msg-btn {
+	position: relative;
+	display: block;
+	width: 30%;
+	min-width: 180px;
+	background: var(--gold-gradient);
+	border: 0;
+	padding: 1.5em 2.3em 1.5em;
+	color: var(--white);
+	font-weight: bold;
+	margin-bottom: 8em;
+}
+
+.contact-list {
+	list-style: none;
+	width: 100%;
+	margin-bottom: 2.5em;
+}
+
+.contact-list li {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	margin: 0 auto;
+	font-size: 1.5rem;
+	font-weight: var(--font-light);
+	color: var(--font-gray);
+	margin-bottom: 1.5em;
+	padding-left: 2em;
+}
+
+.contact-list li .bi {
+	margin-right: 0.5em;
+	font-size: 1rem;
+	display: block;
+}
+
+.media-icons {
+	text-align: center;
+}
+.media-icons .bi {
+	cursor: pointer;
+	color: var(--white);
+	background-color: var(--brown);
+	border-radius: 50%;
+	padding: 0.5em 0.5em;
+}
+
+@media (min-width: 850px) {
+	.contact-thumbnail {
+		margin-bottom: 5em;
+	}
+
+	.contact-section {
+		justify-content: center;
+		flex-direction: row;
+        margin-bottom: 0em;
+	}
+
+    
+
+	.comment-title,
+	.contact-title {
+		margin-bottom: 2em;
+		font-size: 1.5rem;
+	}
+
+	.comment-form {
+		flex: 2;
+	}
+
+	.contact-info {
+		flex: 1;
+	}
+
+	form input,
+	form textarea {
+		font-size: 1rem;
+		padding: 0.3em 0;
+		margin-bottom: 1em;
+	}
+
+	.contact-list li {
+		font-size: 1.3rem;
+	}
+
+	.two-fields-holder {
+		flex-direction: row;
+		gap: 2em;
+	}
+
+	.media-icons {
+		text-align: left;
+		margin-left: 2.5em;
+	}
+
+	.media-icons .bi {
+		margin: 0 0.5em;
+	}
+}
